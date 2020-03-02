@@ -1,4 +1,5 @@
 <?php
+echo "Я Все сделал правильно, ПРИВЕТ ГИТХАБУ...";
 $title = "Главная страница";
 require_once __DIR__."/../parts/header.php"; ?>
 
@@ -14,6 +15,7 @@ require_once __DIR__."/../parts/header.php"; ?>
 <div class="row">
     <?php
     foreach ($posts as $row): ?>
+
         <div class="card mt-3 p-2 col-md-4 col-sm-6" >
             <img src="<?=$row->photo ? 'uploads/'.$row->photo : '' ?>" class="card-img-top img-small" style="height: 380px " alt="Фото">
             <div class="card-body">
